@@ -1,0 +1,12 @@
+SEMANA 3 — ARCHIVOS PARA GITHUB
+
+No subir todavía si aún estás revisando la vista previa.
+
+Al aprobar:
+1. Reemplazar App.jsx en la raíz del repositorio.
+2. Subir la carpeta api con portfolio.py dentro.
+3. Subir requirements.txt, vercel.json y .python-version en la raíz.
+4. Hacer un solo commit.
+5. Vercel instalará Python/yfinance y publicará la función /api/portfolio.
+
+La imagen hero-fincorp-curso.png no necesita volver a subirse porque ya existe en el repositorio.

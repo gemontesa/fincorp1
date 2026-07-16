@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/portfolio.py": {
+      "maxDuration": 30,
+      "excludeFiles": "{**/*.xlsx,**/*.pptx,**/*.pdf,preview/**,tests/**}"
+    }
+  }
 }
