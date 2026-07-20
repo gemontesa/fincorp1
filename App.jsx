@@ -1452,7 +1452,7 @@ export default function App() {
               <p className="lead">
                 Esta página contiene complementos interactivos del curso para su correcto entendimiento
                 mediante ejemplos, aplicaciones prácticas y recursos visuales, con el propósito de
-                brindar una mejor experiencia de aprendizaje :)
+                brindar una mejor experiencia de aprendizaje.
               </p>
 
               <div className="hero-meta">
