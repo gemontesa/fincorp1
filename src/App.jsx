@@ -307,6 +307,35 @@ async function persist(d) {
   }
 }
 
+function mergeSavedWithSeed(saved) {
+  if (!saved || !Array.isArray(saved.weeks)) return SEED;
+
+  const savedById = new Map(saved.weeks.map((w) => [w.id, w]));
+  const seedIds = new Set(SEED.weeks.map((w) => w.id));
+
+  const weeks = SEED.weeks.map((seedWeek) => {
+    const savedWeek = savedById.get(seedWeek.id);
+    if (!savedWeek) return seedWeek;
+
+    const hasSavedSections = Array.isArray(savedWeek.sections) && savedWeek.sections.length > 0;
+    const hasSavedQuiz = Array.isArray(savedWeek.quiz) && savedWeek.quiz.length > 0;
+
+    return {
+      ...seedWeek,
+      ...savedWeek,
+      sections: hasSavedSections ? savedWeek.sections : seedWeek.sections,
+      quiz: hasSavedQuiz ? savedWeek.quiz : seedWeek.quiz,
+    };
+  });
+
+  // Conserva cualquier semana personalizada creada desde el editor.
+  for (const savedWeek of saved.weeks) {
+    if (!seedIds.has(savedWeek.id)) weeks.push(savedWeek);
+  }
+
+  return { ...SEED, ...saved, weeks };
+}
+
 /* ========================================================= PIEZAS COMPARTIDAS */
 function Slider({ label, value, min, max, step, onChange, suffix = "", d = 0 }) {
   return (
@@ -1483,7 +1512,9 @@ export default function App() {
   useEffect(() => {
     (async () => {
       const s = await load();
-      if (s && s.weeks) setData(s); else await persist(SEED);
+      const merged = mergeSavedWithSeed(s);
+      setData(merged);
+      await persist(merged);
       first.current = false;
     })();
   }, []);
