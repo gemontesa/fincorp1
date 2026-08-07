@@ -1,0 +1,18 @@
+ACTUALIZACIÓN — SEMANA 4: ESTRUCTURA DE CAPITAL
+
+Incluye:
+- Comparador deuda/equity y distribución de flujos.
+- Simulador de recapitalización apalancada (MM I).
+- Simulador de MM II y WACC constante.
+- Laboratorio de beta apalancada/desapalancada.
+- Simulador de escudo fiscal.
+- Límite del beneficio fiscal según EBIT.
+- Caso integrador de valor, costo de equity y WACC.
+- 10 preguntas de autoevaluación.
+
+Cambios globales:
+- Se eliminó el nombre “Gonzalo Montes” de la página.
+- Se añadió un aviso persistente de errores y omisiones con el correo ge.montesa@up.edu.pe.
+
+Publicación:
+Reemplazar la carpeta/proyecto por estos archivos conservando la estructura.
