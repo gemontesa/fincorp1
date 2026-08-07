@@ -1558,7 +1558,7 @@ export default function App() {
               <p className="lead">
                 Esta página contiene complementos interactivos del curso para su correcto entendimiento
                 mediante ejemplos, aplicaciones prácticas y recursos visuales, con el propósito de
-                brindar una mejor experiencia de aprendizaje :)
+                brindar una mejor experiencia de aprendizaje.
               </p>
 
               <div className="hero-meta">
@@ -1820,7 +1820,7 @@ export default function App() {
 
       <footer className="foot">
         <div>Finanzas Corporativas 1 · Sección C · Universidad del Pacífico</div>
-        <div>Docente: Miguel Robles</div>
+        <div>Contacto por errores u omisiones: ge.montesa@up.edu.pe</div>
         <div>Sujeto a posibles errores u omisiones.</div>
       </footer>
     </div>
