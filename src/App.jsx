@@ -235,25 +235,25 @@ const SEED = {
       sections: [
         { id: "w4s1", part: "Parte I", partTitle: "Mercados de capital perfectos", heading: "Equity frente a deuda: la misma empresa, distintos derechos", body: `La estructura de capital describe la combinación de deuda y equity utilizada para financiar los activos. La pregunta central no es si la deuda es más barata, sino si cambiar esa combinación altera el valor total de la empresa.
 
-En un mercado perfecto, los flujos generados por los activos no cambian por la forma de financiamiento. La deuda recibe pagos prometidos y el equity conserva el residual. El apalancamiento modifica quién recibe cada flujo y cuánto riesgo soporta, pero no crea nuevos flujos operativos.`", widget: "capital-split" },
+En un mercado perfecto, los flujos generados por los activos no cambian por la forma de financiamiento. La deuda recibe pagos prometidos y el equity conserva el residual. El apalancamiento modifica quién recibe cada flujo y cuánto riesgo soporta, pero no crea nuevos flujos operativos.`, widget: "capital-split" },
         { id: "w4s2", heading: "Proposición MM I: el valor no depende del financiamiento", body: `Modigliani y Miller sostienen que, bajo mercados perfectos, el valor de una empresa es el valor presente de los flujos generados por sus activos. Por ello, V = D + E permanece constante frente a cambios puramente financieros.
 
-Si dos empresas con los mismos activos y distintos niveles de deuda tuvieran valores diferentes, los inversionistas podrían replicar la estructura preferida mediante apalancamiento interno y explotar una oportunidad de arbitraje.`", widget: "mm1-recap" },
+Si dos empresas con los mismos activos y distintos niveles de deuda tuvieran valores diferentes, los inversionistas podrían replicar la estructura preferida mediante apalancamiento interno y explotar una oportunidad de arbitraje.`, widget: "mm1-recap" },
         { id: "w4s3", heading: "Proposición MM II: el costo del equity aumenta con D/E", body: `La deuda no reduce gratuitamente el costo de capital. Al elevar D/E, una porción mayor del riesgo de los activos queda concentrada en un equity más pequeño. Los accionistas exigen entonces un rendimiento mayor.
 
-En mercados perfectos, rE = rU + (D/E)(rU − rD). El aumento del costo del equity compensa exactamente el mayor uso de deuda barata, de modo que el WACC permanece igual a rU.`", widget: "mm2-wacc" },
+En mercados perfectos, rE = rU + (D/E)(rU − rD). El aumento del costo del equity compensa exactamente el mayor uso de deuda barata, de modo que el WACC permanece igual a rU.`, widget: "mm2-wacc" },
         { id: "w4s4", heading: "Betas apalancadas y desapalancadas", body: `La beta de los activos refleja el riesgo sistemático del negocio. La beta del equity incorpora, además, el riesgo financiero generado por la deuda.
 
-Cuando la beta de la deuda es cero, βU = βE × E/(D+E). Si cambia la estructura de capital sin cambiar los activos, βU permanece constante y βE se ajusta al nuevo D/E.`", widget: "capital-beta" },
+Cuando la beta de la deuda es cero, βU = βE × E/(D+E). Si cambia la estructura de capital sin cambiar los activos, βU permanece constante y βE se ajusta al nuevo D/E.`, widget: "capital-beta" },
         { id: "w4s5", part: "Parte II", partTitle: "Impuestos y valor", heading: "Escudo fiscal por intereses", body: `En mercados imperfectos, los intereses deducibles reducen el impuesto a la renta. El escudo fiscal de cada periodo es T × intereses. Este ahorro incrementa el flujo disponible para accionistas y bonistas.
 
-Por ello, con impuestos, el valor de la empresa apalancada es VL = VU + VP(escudos fiscales). Si la deuda es permanente y su monto permanece constante, el valor del escudo fiscal se simplifica a T × D.`", widget: "tax-shield" },
+Por ello, con impuestos, el valor de la empresa apalancada es VL = VU + VP(escudos fiscales). Si la deuda es permanente y su monto permanece constante, el valor del escudo fiscal se simplifica a T × D.`, widget: "tax-shield" },
         { id: "w4s6", heading: "WACC con impuestos y límite del beneficio fiscal", body: `Cuando los intereses son deducibles, el costo efectivo de la deuda es rD(1−T), por lo que el WACC disminuye al introducir deuda bajo los supuestos del modelo. Sin embargo, el beneficio fiscal no puede crecer indefinidamente: si los intereses superan el EBIT, la empresa no genera suficiente renta gravable para utilizar todo el escudo.
 
-La presentación introduce así la razón por la que el apalancamiento óptimo debe ubicarse por debajo del nivel que igualaría intereses y EBIT esperado: existe incertidumbre y una obligación rígida de pago.`", widget: "capital-optimum" },
+La presentación introduce así la razón por la que el apalancamiento óptimo debe ubicarse por debajo del nivel que igualaría intereses y EBIT esperado: existe incertidumbre y una obligación rígida de pago.`, widget: "capital-optimum" },
         { id: "w4s7", heading: "Caso integrador: de la empresa desapalancada a la apalancada", body: `Integra MM II, WACC, beta y escudo fiscal en una sola decisión. Modifica el valor de los activos, la deuda, los costos de capital y la tasa impositiva para observar cómo se redistribuyen valor y riesgo.
 
-El objetivo no es memorizar fórmulas aisladas, sino mantener una identidad económica coherente: los activos determinan el riesgo del negocio; la deuda redistribuye ese riesgo; los impuestos pueden añadir valor; y el exceso de deuda reduce flexibilidad financiera.`", widget: "capital-case" },
+El objetivo no es memorizar fórmulas aisladas, sino mantener una identidad económica coherente: los activos determinan el riesgo del negocio; la deuda redistribuye ese riesgo; los impuestos pueden añadir valor; y el exceso de deuda reduce flexibilidad financiera.`, widget: "capital-case" },
       ],
       quiz: [
         { id:"w4q1", q:"En un mercado perfecto, una empresa cambia equity por deuda sin modificar sus activos. ¿Qué ocurre con su valor total?", o:["Aumenta por usar deuda barata","Disminuye por el mayor riesgo","Permanece constante","Depende del número de acciones"], a:2, e:"MM I: el valor depende de los flujos de los activos, no de cómo se dividen entre deuda y equity." },
