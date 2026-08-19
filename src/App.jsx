@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import heroCourseImage from "./hero-fincorp-curso.png";
 
 /* ============================================================================
@@ -1854,6 +1855,7 @@ export default function App() {
         <div>Contacto por errores u omisiones: ge.montesa@up.edu.pe</div>
         <div>Sujeto a posibles errores u omisiones.</div>
       </footer>
+      <Analytics />
     </div>
   );
 }
